@@ -60,6 +60,9 @@ body{
   }
   img {
     width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h4 {
@@ -68,4 +71,23 @@ body{
     margin-top: 30px;
     margin-bottom: 100px;
     color: #8a0071;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    body {
+        border-width: 0px 20px 0px 20px;
+    }
+    img {
+        width: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+        border-width: 0px 10px 0px 10px;
+    }
+    img {
+        width: 300px;
+    }
   }
