@@ -81,6 +81,9 @@ body{
     img {
         width: 400px;
     }
+    h4 {
+        font-size: 80px;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -89,5 +92,8 @@ body{
     }
     img {
         width: 300px;
+    }
+    h4 {
+        font-size: 60px;
     }
   }
