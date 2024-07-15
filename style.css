@@ -73,6 +73,33 @@ body{
     color: #8a0071;
   }
 
+.center {
+  text-align: center;
+}
+
+.congrats {
+  color: #8a0071;
+  font-weight: bold;
+}
+#win {
+  animation-name: win;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes win {
+  0%   {color:#8a0071;}
+  17%   {color:#ed9025;}
+  34%  {color:rgb(236, 208, 67);}
+  51%  {color:rgb(14, 197, 127);}
+  68%  {color:rgb(42, 20, 241);}
+  85% {color:rgb(87, 15, 202);}
+  100%   {color:#8a0071;}
+}
+
+
 
   @media only screen and (max-width: 800px) {
     body {
