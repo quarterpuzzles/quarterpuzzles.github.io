@@ -18,19 +18,21 @@ function generateHash(str, algorithm = "SHA-512") {
       });
 }
 
-answers = ["fa028af5b8dea224e94d9b7ea1963805c875111cbe3421aea38dd49780623923ebd3049ccd1a798afb92dfbd26d0a33a30012dd468044250adfc1a42b22e50e1",
-  "68396ffe556e71d175f35e0fc8f0eac545ac23b845071e7b3b7c85032ad25e457fedd7f2863a49af4d70eb88645942705a6b4c7a7a2e6ce428028dad9818882d"
+answers = ["91dbfed309b2e2db32cd2d52ac02d954f20d949e93568748ee994e2e7922d2d1ac9e804e3ffd8be2f00e84d1c5ad4d8797100c89fb012ae8c360752752277314",
+  "2559977c566ffee9fd4077ab5c6bb86f61d12114bac9a6611e0bdfbb12ad0942b78285eb3bf97be41dfe5c933310bd365d641cb2563856f37cd2784ae60c2bf4",
+  "327493e2ac2ee1aed3268f1586b3757eb3db2289c1ad201fd348bb3cc49ba5e64563eb6f810874654db89d3abeec0ab33699bdb6b000a14f24d5d5e3a7e9237d"
 ];
-salts = ["hello again darling",
-  "one day I will rememember to show these to you :)",
-  "they make me laugh"
+salts = ["one day I will remember to show these to you darling",
+  "they are silly",
+  "but they make me laugh"
 ];
 
 master_salt = "another salt for a masterpass";
 master_pass = "6843b9b6759769bfe8276c5c962a8aac46d8d75b66f2045e29052040be17b255bd32d68a8d16ec088fb7860e8da301de868ae284f2b519be2b3de4d33412dd07";
 
-puzzes = ['<p class="congrats">FIRST SOLVE!! Halfway there!</p><h3>Puzzle <sup>2</sup>&frasl;<sub>2</sub></h3><p id = "connections"><iframe width="560" height="890" src="https://connections.swellgarfo.com/game/-O8e8G5BI3eJ8YWPIxH_" frameborder="0" allowfullscreen></iframe></p><p> Answer:<input type="text" id="2" value="answer 2"/></p>',
-  '<h4 id="win">YOU WIN!! <3 <br>Because we are hopefully still in person, the prize is kisses: mwah!</h4>'
+puzzes = ['<p class="congrats">CONGRATS! and you definately already are, this is just the funniest combonations of these letters I could find besides the obvious: moom. </p><div><h3>Puzzle <sup>2</sup>&frasl;<sub>3</sub></h3><p>Hi love, we are back to math puzzles after 6 months off :)</p><p class="math">x<sup>4</sup> - 54x<sup>3</sup> + 1019x<sup>2</sup> - 7830x + 19800.75</p><p> Answer: <input type="text" id="2" value="answer 2"/></div>',
+  '<p class="congrats">Hiiii!! You are doing great! Please please say you did not do this one in your head</p><div><h3>Puzzle <sup>3</sup>&frasl;<sub>3</sub></h3><p><table><tbody><tr><td></td><td>APEX</td><td>BACH</td><td>SILK</td><td></td></tr><tr><td>SING</td><td></td><td></td><td></td><td>PAIR</td></tr><tr><td>AIŌN</td><td></td><td>🌓</td><td></td><td>HYPE</td></tr><tr><td>CUTE</td><td></td><td></td><td></td><td>FAST</td></tr><tr><td></td><td>YOGA</td><td>WINK</td><td>COIL</td><td></td></tr></tbody></table></p><p> Answer: <input type="text" id="3" value="answer 3"/></div>',
+  '<h4 id="win">YOU WIN!! <br>Your prize is: so so much love &lt3</h4>'
 ]
 
 
@@ -50,7 +52,7 @@ function answerIn(event) {
           puzzes[id - 1] = '';
 
           // add new event listener
-          if (id < 3) {
+          if (id < 4) {
               document.getElementById(String(id + 1)).addEventListener("input", answerIn, true);
           }
       }
